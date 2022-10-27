@@ -1,0 +1,589 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+@font-face {
+    font-family: 'eurostylenormal';
+    src: url('./../font/EuroStyle_Normal.ttf');
+}
+@font-face {
+    font-family: 'eurostyle';
+    src: url('./../font/eurostile.TTF');
+}
+.eurostyle{
+    font-family: 'eurostylenormal';
+}
+body{
+    overflow-x: hidden;
+}
+
+nav .navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+
+nav.navbar-light .navbar-nav .nav-link:hover,
+nav.navbar-light .navbar-nav .nav-link:active,
+nav.navbar-light .navbar-nav .nav-link:focus
+{
+    font-weight: 600;
+    color: #09BCC2 !important;
+}
+
+nav.navbar-light .navbar-nav .nav-link.active{
+    font-weight: 700;
+    color: #09BCC2 !important;
+}
+
+.img-product{
+    min-height: 288px; 
+    max-height: 288px; 
+    width:100%; 
+    object-fit: contain;
+}
+
+
+/**
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+/**
+fondo de colores
+*/
+
+.bg-purple2{
+    background-color: #3C284F;
+}
+.bg-purple{
+    background-color: #3a1562cf;
+}
+.bg-blue{
+    background-color: #09BCC2 ;
+}
+.bg-breadcrumb{
+    background-color: #00000029;
+}
+/*
+    Tipo de letra
+*/
+.breadcrumb-item + .breadcrumb-item::before{
+    content: '/';
+    color: #A5A5A5;
+}
+.breadcrumb-item a:hover{
+    color: #A5A5A5;
+}
+.breadcrumb-item *{
+    text-decoration: none;
+    color: #A5A5A5;
+    font-style: italic;
+    padding-right: 5px;
+    font-weight: 500;
+}
+.breadcrumb-item.active{
+    color: #A5A5A5;
+    text-decoration: none;
+}
+#filter .container{
+    max-width: 1000px;
+}
+#filter *{
+    font-weight: 500;
+}
+#filter .container select{
+    background-color:#3C284F;
+    color: white;
+    border-radius: 10px;
+} 
+#filter .container select:focus{
+    border: 1px solid gray;
+}
+#filter button{
+    border-radius: 10px;
+}
+
+/**
+Colores
+*/
+.text-white *{
+    color: white;
+}
+.text-blue{
+    color: #09BCC2 !important;
+}
+.text-purple2{
+    color: #3C284F;
+}
+.text-primary{
+    color: #E20A1A !important;
+}
+.btn-danger{
+    background-color: #E20A1A !important;
+}
+.btn-success{
+    color: #fff;
+    background-color: #146c43 !important;
+    border-color: #13653f !important;
+}
+.btn-warning{
+    color: #fff;
+    background-color: #ffcd39 !important;
+    border-color: #ffc720;
+}
+.btn-outline-danger{
+    color: #E20A1A;
+    border-color:#E20A1A !important;
+}
+.btn-outline-danger:hover{
+    border-color:#E20A1A !important; 
+    background-color: #E20A1A !important;
+}
+/**
+
+Tamaños de letra
+*/
+.font-size-124{
+    font-size: 124px;
+}
+.font-size-40{
+    font-size: 40px !important;
+}
+.font-size-30{
+    font-size: 30px !important;
+}
+.font-size-26{
+    font-size: 26px !important;
+}
+.font-size-25{
+    font-size: 25px !important;
+}
+.font-size-24{
+    font-size: 24px !important;
+}
+.font-size-23{
+    font-size: 23px !important;
+}
+.font-size-21{
+    font-size: 21px;
+}
+.font-size-20{
+    font-size: 20px !important;
+}
+.font-size-19{
+    font-size: 19px;
+}
+.font-size-18{
+    font-size: 18px !important;
+}
+.font-size-17{
+    font-size: 17px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+.font-size-15{
+    font-size: 15px;
+}
+.font-size-14 , .font-size-14 *{
+    font-size: 14px;
+}
+
+.font-size-13{
+    font-size: 13px !important;
+}
+
+.font-size-12{
+    font-size: 12px;
+}
+
+.font-size-11{
+    font-size: 11px;
+}
+.header{
+    font-size: 73%;
+}
+
+.header *, .header a:hover,
+.header a:focus
+.header a:active{
+    color: #333333;
+    text-decoration: none;
+}
+
+.header .data-empresa a:hover{
+    text-decoration: underline !important;
+}
+
+.header input {
+    display: none;
+}
+.header form:hover input{
+    display: block;
+}
+.header form:hover button, .header form:hover i{ 
+    color: white;
+    background-color: #E20A1A;;
+}
+input::placeholder,
+input,
+textarea,
+textarea::placeholder{
+    font-size: 12px;
+    color: #1D1D1A;
+}
+.breadcrumb{
+    margin-bottom: 0;
+}
+.breadcrumb *{
+    color: black !important;
+}
+.newsletter .form-control:focus,
+.newsletter .form-control:active
+.newsletter .form-control:hover{
+    box-shadow: none;
+    border-color: none;
+
+}
+.searchHedader input{
+    display: none;
+}
+.searchHedader:hover input{
+    display: block;
+}
+.searchHedader:hover button{
+    background-color: #09BCC2 !important;
+}
+.searchHedader:hover button i{
+    color: white !important;
+}
+.form-control:focus {
+    background-color: #fff;
+    border-color: #09BCC2;
+    box-shadow: 0 0 0 #09BCC2;
+}
+
+.carousel-indicators [data-bs-target]{
+    height: 4px;
+    width: 30px;
+    background-color: #09BCC2 !important;
+}
+
+.categoria-producto a:hover,
+.categoria-producto a:focus,
+.categoria-producto a:active{
+    color: white;
+}
+.table-servicios td{
+    border: 1px solid white;
+}
+td.claro{
+    top: 542px;
+    left: 958px;
+    width: 51px;
+    height: 14px;
+    background: var(--unnamed-color-0c5fab) 0% 0% no-repeat padding-box;
+    background: #0C5FAB 0% 0% no-repeat padding-box;
+    opacity: 0.3;
+}
+td.oscuro{
+    top: 570px;
+    left: 1057px;
+    width: 49px;
+    height: 14px;
+    background: var(--unnamed-color-0c5fab) 0% 0% no-repeat padding-box;
+    background: #0C5FAB 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.calcular-servicio{
+    background-color: #f5fafd;
+}
+.calcular-servicio input,
+.calcular-servicio input:focus,
+.calcular-servicio input:active,
+.calcular-servicio input:hover{
+    background-color: #fafcfe;
+    height: 37px;
+}
+/*
+input:focus,
+input:active{
+    border: none !important;
+    box-shadow: none !important;
+}
+*/
+#heroProducto p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.card{
+    background-color: transparent;
+    border: none;
+}
+.card img{
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.producto .mas{
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    background-color: #09bcc26e !important;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    margin: auto;
+    font-size: 70px !important;
+    font-weight: 100 !important;
+}
+.producto .position-relative:hover .mas.position-absolute{
+    display: flex;
+}
+.producto .mas img{
+    border:none;
+}
+.producto p a{
+    color: #1D1D1A;
+    font-size: 17px;
+    text-decoration: none;
+}
+.producto p a:hover{
+    text-decoration: none;
+}
+.contenedor-breadcrumb{
+    background-color: #f6fbfe;
+}
+.rd-none{
+    display: none;
+}
+aside > ul >  li{
+    border-top: 5px solid #80808021;
+}
+aside > ul{
+    border-top: 3px solid white;
+}
+aside li a:hover{
+    color: white;
+    font-weight: bold;
+}
+aside li.active a{
+    font-weight: 600;
+}
+.color-producto{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+td{
+    vertical-align: middle;
+}
+#carouselProduct .carousel-inner,
+#carouselProduct .carousel-inner img{
+    min-height: 255px;
+    max-height: 255px;
+    object-fit: contain;
+}
+.categorias .card.producto a,
+.productos-relacionados .card.producto a
+{
+    color: white !important;
+}
+
+.contenido-color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;   
+}
+.eliminar-item-presupuesto{
+    padding: 0px 5px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    border-radius: 100%;
+    font-size: 10px;    
+}
+.rboder{
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 120px;
+    border: 2px solid #E20A1A;  
+}
+.carousel-indicators{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.logo-hero {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    min-width: 150px !important;
+    max-width: 150px !important;
+    min-height: 120px !important;
+    max-height: 120px !important;
+}
+
+@media (min-width: 50px){
+    .w-sm-100{
+        width: 100%;
+    }
+    .categoria-producto{
+        bottom: 0; 
+    }
+    .contenedor-color{
+        width: 100%;
+        height: 94px;
+    }
+
+    #hilos-libertad h5{
+        font-size: 1.25rem;
+    }
+    #sliderHeroEmpresa .carousel-indicators {
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+@media (min-width: 720px){
+    .categoria-producto{
+        bottom: 120px;
+    }
+    .w-md-50{
+        width: 50%;
+    }
+    .rcard{
+        max-width:200px; 
+        min-width:200px
+    }
+
+    .contenedor-color{
+        width: 30%;
+    }
+
+    .contenedor{
+        max-width: 200px;
+        min-width: 200px;
+        min-height: 100px;
+        max-height: 100px;
+    }
+
+    #hilos-libertad h5{
+        font-size: 30px;
+    }
+
+    #sliderHeroEmpresa .carousel-indicators{
+        bottom: 10px;
+    }
+    .w-md-48{
+        width: 48% !important;
+    }
+}
+
+@media (min-width: 992px){
+
+    #sliderHero .carousel-inner, #sliderHero .carousel-inner img{
+        min-height: 471px;
+        max-height: 471px;
+    }
+
+    .navbar{
+        box-shadow: 1px 1px 10px #00000099;
+    }
+    .navbar-nav{
+        min-width: 500px;
+        justify-content: space-between !important;
+    }
+    
+    nav.navbar-light .navbar-nav .nav-link{
+        font-size: 90%;
+    }
+    .categoria-producto .container{
+        max-width: 980px;
+        
+    }
+
+    .contenedor-color{
+        width: 18%;
+    }
+
+    nav.navbar-light .navbar-nav .nav-link.active::after, .title {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        height: 3px;
+        background-color: #09BCC2;
+        width: 100%;
+        margin: auto;
+    }
+
+    #sliderHero .carousel-caption{
+        max-width: 50%;
+        top: 10%;
+        text-shadow: 10px 10px 10px black;
+    }
+}
+@media (min-width: 1200px){
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1270px;
+    }
+}
+@media (max-width: 768px){
+
+    #sliderHero .carousel-inner, #sliderHero .carousel-inner img{
+        min-height: 130px;
+        max-height: 130px;
+    }
+
+    nav ul li form button {
+        background-color: #E20A1A !important;
+        color: white !important;
+        padding: 0.5rem !important;
+    }
+
+    #heroProducto h2{
+        font-size: 19px;
+    }
+    .logo-header{
+        max-width: 300px;
+    }
+    .ancho-boton{
+        width: 100%;
+    }
+    #heroProducto p{
+        font-size: 15px;
+    }
+    .rcard{
+        max-width:50%; 
+        min-width:50%;
+    }
+}
+
+@media (max-width: 500px){
+    .logo-header{
+        max-width: 200px;
+    }
+
+    .rcard{
+        max-width:100%; 
+        min-width:100%;
+    }
+}
